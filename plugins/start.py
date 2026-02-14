@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
 
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Video / File Will Be Deleted In {file_auto_delete} (Due To Copyright Issues).\n\n📌 Please Forward This Video / File To Somewhere Else And Start Downloading There.")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Demo Will Be Deleted In 1 Min (DM @MohuHub)")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(madflix_msgs, client, k))
@@ -106,9 +106,14 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
+           InlineKeyboardButton("Demo", url="https://t.me/Vip_demovideo_bot?start=Z2V0LTkwMzIyNTA3NjIyNzAtNTkyMTE0MjE2NjM3NzA"),
+        ],
+        [
+            InlineKeyboardButton("📢Proof", url="https://t.me/+Y_aPNALYo5kyZDU9")
+        ],
+        [
+            InlineKeyboardButton("Offer", url="https://t.me/motuhub?text=Today_Offer")
+        ]
             ]
         )
         await message.reply_text(
