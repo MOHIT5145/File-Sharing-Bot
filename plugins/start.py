@@ -88,7 +88,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
 
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Demo Will Be Deleted In 1 Min (DM @MohuHub)")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis Demo Will Be Deleted In 1 Min (DM @MotuHub)")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(madflix_msgs, client, k))
@@ -96,7 +96,7 @@ async def start_command(client: Client, message: Message):
         # for madflix_msg in madflix_msgs: 
             # try:
                 # await madflix_msg.delete()
-                # await k.edit_text("Your Video / File Is Successfully Deleted ✅") 
+                # await k.edit_text("Demo Video Deleted DM @Motuhub✅") 
             # except:    
                 # pass 
 
