@@ -58,33 +58,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 USER_REPLY_TEXT = "❌Don't Send Me Messages Directly I'm Only File Share Bot !"
 
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
-START_MSG = os.environ.get(
-    "START_MESSAGE",
-    "🎬 Welcome to Video Bot!\n\nChoose a category:\nDM for full content → @motuhub"
-)
-
-START_BUTTONS = InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton("🔥 Trending", callback_data="trending"),
-            InlineKeyboardButton("🎥 Movies", callback_data="movies")
-        ],
-        [
-            InlineKeyboardButton("📺 Series", callback_data="series"),
-            InlineKeyboardButton("😂 Comedy", callback_data="comedy")
-        ],
-        [
-            InlineKeyboardButton("💎 Premium", callback_data="premium"),
-            InlineKeyboardButton("📢 Updates", url="https://t.me/motuhub")
-        ],
-        [
-            InlineKeyboardButton("❓ Help", callback_data="help")
-        ]
-    ]
-)
-
+START_MSG = os.environ.get("START_MESSAGE", ""🎬 Welcome to Video Bot!\n Choose a category:\n DM for full content → @motuhub</b>"")
 
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "🎬 Welcome to Video Bot!\n Choose a category:\n DM for full content → @motuhub</b>")
 
