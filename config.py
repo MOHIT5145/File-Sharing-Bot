@@ -19,7 +19,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "600")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "60")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
@@ -58,9 +58,9 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 USER_REPLY_TEXT = "❌Don't Send Me Messages Directly I'm Only File Share Bot !"
 
-START_MSG = os.environ.get("START_MESSAGE", "Hello {mention}\n\nI Can Store Private Files In Specified Channel And Other Users Can Access It From Special Link.")
+START_MSG = os.environ.get("START_MESSAGE", "🎬 Welcome to Video Bot!\n Choose a category:\n DM for full content → @motuhub")
 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need To Join In My Channel/Group To Use Me\n\nKindly Please Join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "🎬 Welcome to Video Bot!\n Choose a category:\n DM for full content → @motuhub</b>")
 
 
 
