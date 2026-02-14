@@ -58,9 +58,9 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 USER_REPLY_TEXT = "❌Don't Send Me Messages Directly I'm Only File Share Bot !"
 
-START_MSG = os.environ.get("START_MESSAGE", ""🎬 Welcome to Video Bot!\n Choose a category:\n DM for full content → @motuhub</b>"")
+START_MSG = os.environ.get("START_MESSAGE", "🎬 Welcome to Video Bot!\nChoose a category:\nDM for full content → @motuhub</b>")
 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "🎬 Welcome to Video Bot!\n Choose a category:\n DM for full content → @motuhub</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "🎬 Welcome to Video Bot!\nChoose a category:\nDM for full content → @motuhub</b>")
 
 
 
