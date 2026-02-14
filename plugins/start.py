@@ -10,7 +10,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 madflixofficials = FILE_AUTO_DELETE
 jishudeveloper = madflixofficials
-file_auto_delete = humanize.naturaldelta(jishudeveloper)
+file_auto_delete = humanize.naturaldelta(motuhub)
 
 
 
