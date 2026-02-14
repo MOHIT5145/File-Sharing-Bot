@@ -19,7 +19,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 
-FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "60")) # auto delete in seconds
+FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "65")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
@@ -44,7 +44,7 @@ except ValueError:
 
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 DISABLE_CHANNEL_BUTTON = True if os.environ.get('DISABLE_CHANNEL_BUTTON', "True") == "True" else False
 
@@ -56,11 +56,11 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 
 
-USER_REPLY_TEXT = "❌Don't Send Me Messages Directly I'm Only File Share Bot !"
+USER_REPLY_TEXT = "❌Don't Send Me Messages  I'm Only Demo Bot !"
 
-START_MSG = os.environ.get("START_MESSAGE", "🎬 Welcome to Video Bot!\nChoose a category:\nDM for full content → @motuhub</b>")
+START_MSG = os.environ.get("START_MESSAGE", "🎬 Welcome to Video Bot!\nChoose a category:\nDM for full content → @motuhub")
 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "🎬 Welcome to Video Bot!\nChoose a category:\nDM for full content → @motuhub</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "🎬 Welcome to Video Bot!\nChoose a category:\nDM for full content → @motuhub")
 
 
 
